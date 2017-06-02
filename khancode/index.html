@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8" />
+    <title>My Processing Program</title> 
+<script src="processing.js"></script>
+<script src="myCode.js"></script>
+<script type="application/javascript">
+window.addEventListener("load", eventWindowLoaded, false);
+function eventWindowLoaded(){
+var canvas=document.getElementById("canvasOne"); //get the canvas that processingjs will use
+var processingInstance = new Processing(canvas, sketchProc); //pass the function sketchProc(defined in myCode.js) to Processing's construtor
+}
+</script>
+ </head>
+ <body>
+    <canvas id="canvasOne"></canvas>
+ </body>
+
+
+
+
+
+</html>
